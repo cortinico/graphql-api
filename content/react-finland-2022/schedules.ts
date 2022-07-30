@@ -26,7 +26,7 @@ const monday: Schedule = {
       sessions: [
         {
           type: SessionType.WORKSHOP,
-          people: [people.m4Dz],
+          people: [people.m4Dz, people.thaisSantos],
           title: "Design systems for beginners",
           description: `The design system workshop will provide you with all the basics and fundamentals of building a Design System, from scratch. It is mainly intended to Frontend / UI developers but can be valuable to other teammates. As long as you‘re working on any product interface, regardless of your position, this workshop will give you the keys to collaborate, from Design to System.
 
@@ -92,13 +92,15 @@ const tuesday: Schedule = {
     },
     {
       begin: "06:00",
-      end: "09:00",
+      end: "14:00",
       sessions: [
         {
           type: SessionType.WORKSHOP,
           people: [people.nikGraf],
           title: "Advanced React",
-          description: `React 18 was a long-awaited release. New APIs were introduced and certain behavior changed. Some of these changes have quite an impact on your daily development, while others rarely affect you. Nevertheless, only by knowing your tools can you best decide when to use which of them.
+          description: `> Note that this workshop is held **twice** with the same content.
+
+React 18 was a long-awaited release. New APIs were introduced and certain behavior changed. Some of these changes have quite an impact on your daily development, while others rarely affect you. Nevertheless, only by knowing your tools can you best decide when to use which of them.
 
 In order to get a deep understanding of these new APIs and behavior changes we will explore the following topics:
 
@@ -117,9 +119,15 @@ By the end of the workshop you will be able to leverage the new features of Reac
 
 **Preparation:** Please have Node 16+ and Yarn installed on your machine.
 
-**Length:** Full day.`,
+**Length:** One full day.`,
           keywords: [],
         },
+      ],
+    },
+    {
+      begin: "06:00",
+      end: "09:00",
+      sessions: [
         {
           type: SessionType.WORKSHOP,
           people: [people.m4Dz, people.varyaStepanova],
@@ -153,10 +161,14 @@ By the end of the workshop you will be able to leverage the new features of Reac
           keywords: [],
         },
         {
-          type: SessionType.ORGANIZATIONAL,
-          people: [people.nikGraf],
-          title: "Advanced React",
-          description: `The workshop continues`,
+          type: SessionType.WORKSHOP,
+          people: [people.matias],
+          title: "Web Components - Write once, run anywhere",
+          description: `> Note that this workshop is held **twice** with the same content.
+
+In this half-day workshop we look into how Web Components work, how you can easily create them and how they can utilized by you and your team in larger projects, no matter the library/framework you're using.
+
+**Requirements:** JavaScript skills, Preferably experience in writing UI elements with React, Vue or a similar library.`,
           keywords: [],
         },
       ],
@@ -182,6 +194,48 @@ const wednesday: Schedule = {
     },
     {
       begin: "06:00",
+      end: "14:00",
+      sessions: [
+        {
+          type: SessionType.WORKSHOP,
+          people: [people.davidKhourshid],
+          title:
+            "Diagram, Develop, Deploy: Build bulletproof apps collaboratively with statecharts",
+          description: `We've come a long way from pen and paper. In this workshop, you'll learn how to build apps with statecharts - a method of drawing diagrams that can be executed as production code. This opens up new opportunities for collaboration - helping you improve the handoffs between product, design, and dev. We'll be using XState - an open-source statechart tool for JavaScript - and Stately's visual tools to build an internet banking app, from diagram to deploy. You'll learn how to model any piece of code using states, events, actions and services.`,
+          keywords: [],
+        },
+        {
+          type: SessionType.WORKSHOP,
+          people: [people.nikGraf],
+          title: "Advanced React",
+          description: `> Note that this workshop is held **twice** with the same content.
+
+React 18 was a long-awaited release. New APIs were introduced and certain behavior changed. Some of these changes have quite an impact on your daily development, while others rarely affect you. Nevertheless, only by knowing your tools can you best decide when to use which of them.
+
+In order to get a deep understanding of these new APIs and behavior changes we will explore the following topics:
+
+- introduction to <Suspense> and <SuspenseList>
+- new concurrent rendering APIs: startTransition, useDeferredValue
+- new Hooks: useId, useSyncExternalStore, useInsertionEffect
+- strict effects in the new Strict Mode
+- automatic batching and flushSync
+- sneak peek into what's coming after React 18
+
+The workshop is split into several modules. Each of them starts with a 20 min presentation, 30-50 min coding session and is followed by a 10 min retrospective. The final topic about what's coming after React 18 is only covered as a presentation.
+
+By the end of the workshop you will be able to leverage the new features of React 18 and be able to use them in production ready applications.
+
+**Prerequisites:** This workshop is targeted for intermediate and experienced React developers. You should be comfortable using Hooks (incl. useEffect, useRef) and basic understanding of [Concurrent Mode](https://reactjs.org/docs/concurrent-mode-intro.html) is recommended but not required.
+
+**Preparation:** Please have Node 16+ and Yarn installed on your machine.
+
+**Length:** One full day.`,
+          keywords: [],
+        },
+      ],
+    },
+    {
+      begin: "06:00",
       end: "09:00",
       sessions: [
         {
@@ -202,13 +256,15 @@ Bring your own project to test to get the most out of the workshop. I will prepa
 **Preparation:** Have the project (your own or cloned workshop example) up and running on your computer. I will add a link to the workshop project later.`,
           keywords: [],
         },
+        /*
         {
           type: SessionType.WORKSHOP,
-          people: [people.m4Dz, people.varyaStepanova],
+          people: [people.m4Dz, people.varyaStepanova, people.norbert],
           title: "Visual regression tests for design systems",
           description: `In this advanced half-day technical session, we discuss how to benefit from visual regression testing in design systems. Bring your own problems/projects!`,
           keywords: [],
         },
+        */
       ],
     },
     {
@@ -230,18 +286,22 @@ Bring your own project to test to get the most out of the workshop. I will prepa
           type: SessionType.WORKSHOP,
           people: [people.matias],
           title: "Web Components - Write once, run anywhere",
-          description: `In this half-day workshop we look into how Web Components work, how you can easily create them and how they can utilized by you and your team in larger projects, no matter the library/framework you're using.
+          description: `> Note that this workshop is held **twice** with the same content.
 
-**Requirements:** JavaScript skills, Preferably experience in writing UI elements with React, Vue or a similiar library.`,
+In this half-day workshop we look into how Web Components work, how you can easily create them and how they can utilized by you and your team in larger projects, no matter the library/framework you're using.
+
+**Requirements:** JavaScript skills, Preferably experience in writing UI elements with React, Vue or a similar library.`,
           keywords: [],
         },
+        /*
         {
           type: SessionType.WORKSHOP,
-          people: [people.m4Dz, people.varyaStepanova],
+          people: [people.m4Dz, people.varyaStepanova, people.norbert],
           title: "Design system documentation",
           description: `In this advanced half-day technical session, we discuss how design systems can be used for documentation and what tools to use for the purpose. Bring your own problems/projects!`,
           keywords: [],
         },
+        */
       ],
     },
   ],
@@ -271,8 +331,10 @@ const thursday: Schedule = {
         {
           type: SessionType.TALK,
           level: Level.INTERMEDIATE,
-          title: "",
-          description: "",
+          title:
+            "What do engineers, kintsugi and stained glass, and lotuses and clocks have in common?",
+          description:
+            "In today's ever-evolving world, it can feel like we can't recover from the last change before the next one overwhelms us. We will travel through art, philosophy, and ourselves to see change from a new perspective. We will learn coping mechanisms to keep our mental health in check.",
           people: [people.jen],
           urls: {
             video: "",
@@ -288,11 +350,21 @@ const thursday: Schedule = {
             video: "",
           },
         },
+        {
+          type: SessionType.TALK,
+          level: Level.INTERMEDIATE,
+          title: "",
+          description: "",
+          people: [people.ryan],
+          urls: {
+            video: "",
+          },
+        },
       ],
     },
     {
       begin: "07:45",
-      end: "08:00",
+      end: "08:15",
       sessions: [
         {
           type: SessionType.COFFEE_BREAK,
@@ -303,7 +375,7 @@ const thursday: Schedule = {
       ],
     },
     {
-      begin: "08:00",
+      begin: "08:15",
       end: "09:45",
       title: "Techniques",
       sessions: [
@@ -330,16 +402,6 @@ const thursday: Schedule = {
         {
           type: SessionType.TALK,
           level: Level.INTERMEDIATE,
-          title: "The weird things about React",
-          description: "",
-          people: [people.nikGraf],
-          urls: {
-            video: "",
-          },
-        },
-        {
-          type: SessionType.TALK,
-          level: Level.INTERMEDIATE,
           title: "Notes to my younger self",
           description: `Learn how to get the most out of the company you are in, whether it’s a dead end job, perhaps the company are on the brink of collapse, maybe you’ve hit the job jackpot and are working in the most fantastic start up. Always something to learn. What would I tell myself so that Monday mornings are not painful, but are instead something that can be looked forward to. You’re job can be fun (honestly)! And of course the code, all those things I’ve done or not done over the years – would I do it all again the same? No!`,
           people: [people.kennethSutherland],
@@ -350,7 +412,7 @@ const thursday: Schedule = {
       ],
     },
     {
-      begin: "09:45",
+      begin: "09:30",
       end: "11:00",
       sessions: [
         {
@@ -365,7 +427,39 @@ const thursday: Schedule = {
       begin: "11:00",
       end: "12:30",
       title: "Statecharts",
-      sessions: [],
+      sessions: [
+        {
+          type: SessionType.TALK,
+          level: Level.INTERMEDIATE,
+          title: "The weird things about React",
+          description: "",
+          people: [people.nikGraf],
+          urls: {
+            video: "",
+          },
+        },
+        {
+          type: SessionType.TALK,
+          level: Level.INTERMEDIATE,
+          title: "",
+          description: "",
+          people: [people.davidKhourshid],
+          urls: {
+            video: "",
+          },
+        },
+        {
+          type: SessionType.TALK,
+          level: Level.INTERMEDIATE,
+          title: "State machines meet component libraries",
+          description:
+            "In this talk, we will experiment with using state machines for modeling components in a React based component library. We will use the Stately visual editor to model components visually and see how we can use Storybook and Model based testing concepts to deal with test generation and documentation based on acceptance criteria.",
+          people: [people.farzadYz],
+          urls: {
+            video: "",
+          },
+        },
+      ],
     },
     {
       begin: "12:30",
@@ -387,10 +481,8 @@ const thursday: Schedule = {
           type: SessionType.TALK,
           level: Level.INTERMEDIATE,
           title: "Mob programming",
-          description: `In this session we'll mob program a web application together.
-
-Note that it's likely that Woody will join us remote due to travel restrictions so we'll do a mixed session.`,
-          people: [people.davidC, people.laurao, people.woody],
+          description: `In this session we'll mob program a web application together.`,
+          people: [people.woody, people.davidC, people.laurao],
           urls: {
             video: "",
           },
@@ -436,7 +528,7 @@ const friday: Schedule = {
           level: Level.INTERMEDIATE,
           title: "",
           description: "",
-          people: [people.kirsi],
+          people: [people.tanja],
           urls: {
             video: "",
           },
@@ -455,7 +547,7 @@ const friday: Schedule = {
     },
     {
       begin: "07:45",
-      end: "08:00",
+      end: "08:15",
       sessions: [
         {
           type: SessionType.COFFEE_BREAK,
@@ -466,15 +558,17 @@ const friday: Schedule = {
       ],
     },
     {
-      begin: "08:00",
+      begin: "08:15",
       end: "09:45",
       title: "Web components",
       sessions: [
         {
           type: SessionType.TALK,
           level: Level.INTERMEDIATE,
-          title: "",
-          description: "",
+          title: "Avoiding vendor lock-in through Web Components",
+          description: `In this talk we'll discuss the current status of Web Component support in browsers and how developers can avoid locking themselves into certain key technologies by utilizing the Web platform itself.
+
+We'll go through what the web can actually accomplish on it's own at the moment, and some useful tools to assist in developing more vendorless, portable experiences.`,
           people: [people.matias],
           urls: {
             video: "",
@@ -483,8 +577,14 @@ const friday: Schedule = {
         {
           type: SessionType.TALK,
           level: Level.INTERMEDIATE,
-          title: "",
-          description: "",
+          title: "SDKs vs Web Components: Place Your Bets",
+          description: `You're offering a fantastic brand new service, and it'll revolutionize your customers' world! Because it's smart, it delivers an API-first solution wrapped in an edge architecture. And because you're smart, you're offering to your end-users several SDKs to let them use those APIs at their full potential: PHP, Java, Ruby, Go, Python, JavaScript… Wait, JavaScript?
+
+When entering the world of frontend architecture in an API-first world, we should take time to answer this simple question: SDK or Web Components? The frontend world comes with a UI-first paradigm, so should we switch our mindset?
+
+On the other hand, Web Components now have a mature ecosystem where you can build advanced UI elements that already embed all the logic they need.
+
+API-first backend only requires HTTP streams, and Web Components embed the required network primitives. Should we distribute a JS SDK or a library of Web Components for our service? Here's the match between the two giants! SDKs vs Web Components: Place Your Bets.`,
           people: [people.m4Dz],
           urls: {
             video: "",
@@ -493,8 +593,10 @@ const friday: Schedule = {
         {
           type: SessionType.TALK,
           level: Level.INTERMEDIATE,
-          title: "",
-          description: "",
+          title:
+            "Faster content websites via SSR and progressive hydration of Web Components",
+          description: `One of the best performance tips is "do less" - transmit less data and do less processing. There are a million details but we will focus on transmitting less JavaScript.
+            We are going to tackle it by doing more work at build time which means we start with almost zero JavaScript and only load more as the users interacts with the page.`,
           people: [people.thomas],
           urls: {
             video: "",
@@ -573,17 +675,7 @@ const friday: Schedule = {
         {
           type: SessionType.TALK,
           level: Level.INTERMEDIATE,
-          title: "",
-          description: "",
-          people: [people.eevis],
-          urls: {
-            video: "",
-          },
-        },
-        {
-          type: SessionType.TALK,
-          level: Level.INTERMEDIATE,
-          title: "",
+          title: "Better accessibility with a user-centric view",
           description: "",
           people: [people.marianna],
           urls: {
@@ -593,12 +685,35 @@ const friday: Schedule = {
         {
           type: SessionType.TALK,
           level: Level.INTERMEDIATE,
-          title: "",
+          title:
+            "Let’s Keep Our Promises - ARIA, Styles and Keyboard Navigation",
+          description:
+            "Many websites and applications give false promises to users. For example, they promise interaction when there is none. In this talk, I will discuss some of those promises and how to create websites and applications that fulfill the promises given to users. After listening to this talk, you'll walk away knowing more about ARIA and keyboard navigation. You'll also learn how to create more inclusive websites and applications.",
+          people: [people.eevis],
+          urls: {
+            video: "",
+          },
+        },
+        {
+          type: SessionType.TALK,
+          level: Level.INTERMEDIATE,
+          title:
+            "Don't lose focus – accessible navigation in single-page applications",
           description: "",
           people: [people.roosa],
           urls: {
             video: "",
           },
+        },
+      ],
+    },
+    {
+      begin: "15:00",
+      end: "18:00",
+      sessions: [
+        {
+          type: SessionType.PARTY,
+          title: "Afterparty",
         },
       ],
     },

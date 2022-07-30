@@ -6,6 +6,7 @@ import * as allSponsors from "../sponsors";
 import schedules from "./schedules";
 
 const partners = [
+  allSponsors.divriots,
   allSponsors.bejs,
   allSponsors.halfstack,
   allSponsors.koodiasuomesta,
@@ -13,13 +14,25 @@ const partners = [
   allSponsors.reactnorway,
   allSponsors.survivejs,
   allSponsors.reactbrussels,
+  allSponsors.reactindia,
   allSponsors.reactnativeeu,
   allSponsors.reactjsday,
   allSponsors.webexpo,
 ];
 const goldSponsors = [allSponsors.relex];
-const silverSponsors = [allSponsors.elisa, allSponsors.nitor];
-const bronzeSponsors = [allSponsors.moonhighway, allSponsors.solita];
+const silverSponsors = [
+  allSponsors.elisa,
+  allSponsors.nitor,
+  allSponsors.gofore,
+  allSponsors.supermetrics,
+];
+const bronzeSponsors = [
+  allSponsors.moonhighway,
+  allSponsors.solita,
+  allSponsors.huuva,
+  allSponsors.knowit,
+  allSponsors.utopia,
+];
 const platformSponsors: Contact[] = [];
 const sponsors = partners.concat(
   goldSponsors,
